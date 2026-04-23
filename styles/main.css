@@ -33,3 +33,54 @@ nav a {
   padding: 10px 15px;
   display: block;
 }
+/* Dropdown menu (CSS hover version) */
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  opacity:0;
+  transform:translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 300ms ease, transform 300ms ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul ul {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: none;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+  nav li{
+    width: 100%;
+  }
+}
