@@ -10,3 +10,15 @@ body {
   color: #222;
   line-height: 1.6;
 }
+
+header {
+  background: #222;
+  padding: 16px 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
