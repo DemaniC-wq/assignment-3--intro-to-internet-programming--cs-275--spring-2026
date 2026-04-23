@@ -22,3 +22,14 @@ nav ul {
   gap: 20px;
   align-items: center;
 }
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
