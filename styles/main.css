@@ -51,6 +51,19 @@ nav ul ul {
   transition: opacity 300ms ease, transform 300ms ease;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+nav li:hover ul{
+  opacity:1;
+  transform:translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+nav ul ul a {
+  color: black;
+}
+
+
+
 @media (max-width: 768px) {
 
   nav ul {
