@@ -97,6 +97,105 @@ h1 {
   transition: opacity 500ms;
   z-index: 1000;
 }
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  opacity: 0;
+  transition: all 500ms;
+  z-index: 1001;
+}
+
+#modal.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content {
+  text-align: center;
+}
+
+/* =========================
+   DROPDOWN (JS CONTROLLED VERSION)
+========================= */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: 500ms;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.dropdown.active {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: all;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+/* =========================
+   SIDE TRAY
+========================= */
+
+.tray {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: white;
+  transform: translateX(-100%);
+  transition: 500ms;
+  z-index: 999;
+  padding: 20px;
+}
+
+.tray.active {
+  transform: translateX(0);
+}
+
+/* =========================
+   JS TRIGGER LINKS
+========================= */
+
+#js-triggers {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#js-triggers li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
 
   nav ul {
