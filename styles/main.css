@@ -64,6 +64,20 @@ nav ul ul a {
 
 
 
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 @media (max-width: 768px) {
 
   nav ul {
