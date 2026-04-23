@@ -1,3 +1,7 @@
+/* =========================
+   BASE / RESET
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,10 @@ body {
   color: #222;
   line-height: 1.6;
 }
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
 
 header {
   background: #222;
@@ -33,6 +41,7 @@ nav a {
   padding: 10px 15px;
   display: block;
 }
+
 /* Dropdown menu (CSS hover version) */
 nav ul ul {
   position: absolute;
@@ -64,6 +73,9 @@ nav ul ul a {
 
 
 
+/* =========================
+   MAIN LAYOUT
+========================= */
 
 main {
   max-width: 900px;
